@@ -1,6 +1,7 @@
 <script setup>
 import { ref, watch } from "vue";
 import Loading from "@/components/Loading.vue";
+// Проверка работы гит
 
 const props = defineProps({
   active: Boolean,
