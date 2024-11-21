@@ -1,0 +1,24 @@
+`https://frost.runtime.kz/api/registration` (POST) - регистрирует нового пользователя на основе переданных в теле
+запроса данных.
+* `first_name`
+* `last_name`
+* `email`
+* `password`
+
+axios.post(<path>, <request body>)
+
+axios.post('https://frost.runtime.kz/api/registration', {
+  first_name: ...,
+  ...
+})
+
+`https://frost.runtime.kz/api/cart/add?productId=...&count=...` (GET) - добавлят новый товар в корзину пользователя в
+указанном количествем.
+
+`https://frost.runtime.kz/api/cart` (GET) - получает список товароых которые пользователь добавил в корзину.
+
+`https://frost.runtime.kz/api/cart/increase?productId=...` (GET)
+
+`https://frost.runtime.kz/api/cart/decrease?productId=...` (GET)
+
+`https://frost.runtime.kz/api/cart/delete?productId=...` (GET)
